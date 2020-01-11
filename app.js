@@ -1,10 +1,16 @@
 
 // Noun
-const inputNoun = document.getElementById("input-noun");
+const inputNoun1 = document.getElementById("input-noun");
+const inputNoun2 = document.getElementById("input-noun");
+const inputNoun3 = document.getElementById("input-noun");
+const inputNoun4 = document.getElementById("input-noun");
 
-const noun = document.getElementById("noun");
+// const noun = document.getElementById("noun");
 
 const noun1 = document.getElementById("noun-1");
+const noun2 = document.getElementById("noun-2");
+const noun3 = document.getElementById("noun-3");
+const noun4 = document.getElementById("noun-4");
 
 
 // Adjective 1
@@ -62,6 +68,11 @@ const button = document.getElementById("get-button");
 const changeValue = () => {
 // When user enters value, the output word should equal the input
 
+    noun1.textContent = inputNoun1.value;
+    noun2.textContent = inputNoun2.value;
+    noun3.textContent = inputNoun3.value;
+    noun4.textContent = inputNoun4.value;
+
     adjective1.textContent = inputAdjective1.value;
 
     verb1.textContent = inputVerb1.value;
@@ -71,15 +82,14 @@ const changeValue = () => {
     bodyPart.textContent = inputBodyPart.value;
 
     preposition.textContent = inputPreposition.value;
-
-    noun.textContent = inputNoun.value;
-    noun1.textContent = inputNoun.value;
-
+    
     adjective2.textContent = inputAdjective2.value;
 
     verb2.textContent = inputVerb2.value;
     
     adjective3.textContent = inputAdjective3.value;
+
+
 
 // Story becomes visible
     document.getElementById("story-box").style.display = "block";
