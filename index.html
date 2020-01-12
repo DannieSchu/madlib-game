@@ -5,78 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Aladdin MadLibs</title>
+    <title>MadLibs</title>
 </head>
 <body>
     <header class="header">
-        <h1>Welcome to 1992!</h1>
-        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E843419AE32C5852FAB403A8A49AC94A95C666A1645E1017DE96D4CEDB8D8B92/scale?aspectRatio=1.78&format=jpeg" width=80%>
+        <h1>Welcome to 1992</h1>
+        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E843419AE32C5852FAB403A8A49AC94A95C666A1645E1017DE96D4CEDB8D8B92/scale?aspectRatio=1.78&format=jpeg" width=80% id="photo">
         <br>
         <br>
-        <h2>Are you ready to play MadLibs?</h2>
     </header>
     <main>
-        <div class="main-box">
-            <div>
-                <p><em>Fill in the blanks as indicated. Can't remember what an adjective is? Check out <a href="https://www.aims.edu/student/online-writing-lab/grammar/parts-of-speech.php" target="blank">this cheatsheet.</a></em></p>
+        <div>
+            <h2 id="ready">Are you ready to play MadLibs?</h2>
+
+            <div class="main-box" id="main-box">
+                <div>
+                    <p><em>Fill in the blanks as indicated. Can't remember what an adjective is? Check out <a href="https://www.aims.edu/student/online-writing-lab/grammar/parts-of-speech.php" target="blank">this cheatsheet.</a></em></p>
+                </div>
+
+                <form>
+                    <label for="input-noun">Noun: </label><input type="text" id="input-noun"><br>
+
+                    <label for="input-adjective-1">Adjective: </label><input type="text" id="input-adjective-1"><br>
+
+                    <label for="input-royalty">Member of royalty: </label><input type="text" id="input-royalty"></br>
+
+                    <label for="input-verb-1" >Verb: </label><input type="text" id="input-verb-1"><br>
+
+                    <label for="input-body-part">Body part (plural): </label><input type="text" id="input-body-part">
+                    <br>
+                    
+                    <label for="input-preposition">Preposition: </label><input type="text" id="input-preposition"><br>
+                    
+                    <label for="input-adjective-2">Adjective: </label><input type="text" id="input-adjective-2"><br>
+                    
+                    <label for = "input-verb-2">Verb: </label><input type="text" id="input-verb-2"><br>
+                    
+                    <label for="input-adjective-3">Adjective: </label><input type="text" id="input-adjective-3"><br>
+                </form>
             </div>
-
-            <div>
-                <label><strong>Noun: </strong><input id="input-noun" class="input-box"></label>
-                <br>
-                <br>
-
-                <label><strong>Adjective: </strong><input id="input-adjective-1" class="input-box"></label>
-                <br>
-                <br>
-
-                <label><strong>Member of royalty: </strong><input id="input-royalty" class="input-box"></label>
-                <br>
-                <br>
-
-                <label><strong>Verb: </strong><input id="input-verb-1" class="input-box"></label>
-                <br>
-                <br>
-
-                <label><strong>Body part (plural): </strong><input id="input-body-part" class="input-box"></label>
-                <br>
-                <br>
-                
-                <label><strong>Preposition: </strong><input id="input-preposition" class="input-box"></label>
-                <br>
-                <br>
-                
-                <label><strong>Adjective: </strong><input id="input-adjective-2" class="input-box"></label>
-                <br>
-                <br>
-                
-                <label><strong>Verb: </strong><input id="input-verb-2" class="input-box"></label>
-                <br>
-                <br>
-                
-                <label><strong>Adjective: </strong><input id="input-adjective-3" class="input-box"></label>
-                <br>
-                <br>
-
-            </div>
+            <label class="submit" id="submit">
+                <button id="button" class="button">
+                    <strong>CLICK HERE...</strong>
+                </button>
+                <p>To see your story come to life!</p>
+            </label>
         </div>
-        <br>
-        <br>
-        
-        <label class="submit">
-            <button id="get-button" class="button">
-                <strong>CLICK HERE...</strong>
-            </button>
-            <p>To see your story come to life!</p>
-        </label>
-        <br>
-        <br>
         <div id="story-box" class="story-box">
 
             <p>I can show you the <span id="noun-1" class="output-word"></span><br>
             Shining, <span id="adjective-1" class="output-word"></span>, splendid<br>
             Tell me, <span id="royalty" class="output-word"></span>, now when did<br>
-            You last let your heart <span id="verb-1" class="output-word"></span> ?<br><br>
+            You last let your heart <span id="verb-1" class="output-word"></span>?<br><br>
             I can open your <span id="body-part" class="output-word"></span><br>
             Take you wonder by wonder<br>
             Over, <span id="preposition" class="output-word"></span> and under<br>
@@ -92,10 +72,6 @@
             It's crystal clear<br>
             That now I'm in a whole new <span id="noun-4" class="output-word"></span> with you<br></p>
         </div>
-
-        <br>
-        <br>
-        <br>
 
     </main>
 

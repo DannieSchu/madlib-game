@@ -6,35 +6,81 @@ body {
     background-color: rgb(49, 22, 43);
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
 }
 
 h1 {
     color: palevioletred;
     font-size: 60px;
+    text-align: center;
+}
+
+img {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%
+}
+
+h2 {
+    text-align: center;
+    display: block;
 }
 
 .header {
-    margin: auto;
+    margin: 0 auto;
 }
 
 .main-box {
     background-color: peachpuff;
     width: 60%;
     color: rgb(49, 22, 43);
-    /* font-style: bold; */
     padding-right: 5%;
     padding-left: 5%;    
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 40px;
     border-radius: 15px 50px 30px 5px;
-    margin: auto;
-    text-align: left;
-
+    margin: 0 auto;
+    display: block;
 }
 
-.input-box {
+input {
     float: right;
+    font-size: 1rem;
+    display: block;
+    padding-bottom: 4px;
+    width: 120px;
+}
+
+label {
+    font-weight: bolder;
+    text-align: left;
+    display: block;
+    padding-top: 20px;
+    height: 20px;
+}
+
+span {
+    text-transform: lowercase;
+}
+
+.submit {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+button {
+    background-color: peachpuff;
+    color: rgb(49, 22, 43);
+    border-radius: 5px;
+    width: 100px;
+    height: 22px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: palevioletred;
+    color: peachpuff;
 }
 
 .story-box {
@@ -45,31 +91,14 @@ h1 {
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 40px 15px 5px 25px;
-    margin: auto;
-    width: 60%;
     font-size: 20px;
     text-align: left;
     color: white;
+    margin: 0 auto;
+    display: none;
+    margin-top: 25px;
+    margin-bottom: 80px;
 }
-
-/* #get-button:hover {
-    cursor: pointer;
-} */
-.button {
-    background-color: peachpuff;
-    color: rgb(49, 22, 43);
-    border-radius: 5px;
-}
-.button:hover {
-    cursor: pointer;
-    background-color: palevioletred;
-    color: peachpuff;
-}
-
-/* .submit {
-    text-align: center;
-    padding: 40px;
-} */
 .output-word {
     color: rgb(49, 22, 43);    
 }
