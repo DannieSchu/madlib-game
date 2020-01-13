@@ -4,27 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <title>MadLibs</title>
 </head>
 <body>
     <header class="header">
-        <h1>Welcome to 1992</h1>
+        <h1>Welcome to 1992!</h1>
         <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E843419AE32C5852FAB403A8A49AC94A95C666A1645E1017DE96D4CEDB8D8B92/scale?aspectRatio=1.78&format=jpeg" width=80% id="photo">
-        <br>
-        <br>
     </header>
     <main>
-        <div>
-            <h2 id="ready">Are you ready to play MadLibs?</h2>
+        <article id="pre-submission" class="pre-submission">
+            <h2>Are you ready to play MadLibs?</h2>
 
-            <div class="main-box" id="main-box">
+            <section class="form-box">
                 <div>
                     <p><em>Fill in the blanks as indicated. Can't remember what an adjective is? Check out <a href="https://www.aims.edu/student/online-writing-lab/grammar/parts-of-speech.php" target="blank">this cheatsheet.</a></em></p>
                 </div>
 
                 <form>
-                    <label for="input-noun">Noun: </label><input type="text" id="input-noun"><br>
+                    <label for="input-noun">Noun: </label><input type="text" id="input-noun" required><br>
 
                     <label for="input-adjective-1">Adjective: </label><input type="text" id="input-adjective-1"><br>
 
@@ -43,35 +41,43 @@
                     
                     <label for="input-adjective-3">Adjective: </label><input type="text" id="input-adjective-3"><br>
                 </form>
-            </div>
+            </section>
+            <!-- <section class="submit" id="submit">
+                <input type="submit">
+                <p>See your story come to life!</p>
+
+            </section> -->
             <label class="submit" id="submit">
                 <button id="button" class="button">
                     <strong>CLICK HERE...</strong>
                 </button>
                 <p>To see your story come to life!</p>
             </label>
-        </div>
-        <div id="story-box" class="story-box">
+        </article id="pre-submission" >
+        <section id="story-box" class="story-box">
 
-            <p>I can show you the <span id="noun-1" class="output-word"></span><br>
-            Shining, <span id="adjective-1" class="output-word"></span>, splendid<br>
-            Tell me, <span id="royalty" class="output-word"></span>, now when did<br>
-            You last let your heart <span id="verb-1" class="output-word"></span>?<br><br>
-            I can open your <span id="body-part" class="output-word"></span><br>
+            <p>I can show you the <span id="noun-1"></span><br>
+            Shining, <span id="adjective-1"></span>, splendid<br>
+            Tell me, <span id="royalty"></span>, now when did<br>
+            You last let your heart <span id="verb-1"></span>?<br><br>
+            I can open your <span id="body-part"></span><br>
             Take you wonder by wonder<br>
-            Over, <span id="preposition" class="output-word"></span> and under<br>
+            Over, <span id="preposition"></span> and under<br>
             On a magic carpet ride<br><br>
-            A whole new <span id="noun-2" class="output-word"></span><br>
-            A new <span id="adjective-2" class="output-word"></span> point of view<br>
+            A whole new <span id="noun-2"></span><br>
+            A new <span id="adjective-2"></span> point of view<br>
             No one to tell us, "No"<br>
-            Or where to <span id="verb-2" class="output-word"></span><br>
+            Or where to <span id="verb-2"></span><br>
             Or say we're only dreaming<br><br>
-            A whole new <span id="noun-3" class="output-word"></span><br>
-            A <span id="adjective-3" class="output-word"></span> place I never knew<br>
+            A whole new <span id="noun-3"></span><br>
+            A <span id="adjective-3"></span> place I never knew<br>
             But when I'm way up here<br>
             It's crystal clear<br>
-            That now I'm in a whole new <span id="noun-4" class="output-word"></span> with you<br></p>
-        </div>
+            That now I'm in a whole new <span id="noun-4"></span> with you<br></p>
+            <audio autoplay>
+                <source src="a-whole-new-world-a-whole-new-life-for-you-and-me.mp3" type="audio/mp3">
+            </audio>
+        </section>
 
     </main>
 

@@ -12,7 +12,6 @@ const noun2 = document.getElementById("noun-2");
 const noun3 = document.getElementById("noun-3");
 const noun4 = document.getElementById("noun-4");
 
-
 // Adjective 1
 const inputAdjective1 = document.getElementById("input-adjective-1");
 const adjective1 = document.getElementById("adjective-1");
@@ -45,23 +44,14 @@ const verb2 = document.getElementById("verb-2");
 const inputAdjective3 = document.getElementById("input-adjective-3");
 const adjective3 = document.getElementById("adjective-3");
 
-// Main box (form)
-const mainBox = document.getElementById("main-box");
-
-// Submit 
-const submit = document.getElementById("submit");
-
-// h2 Ready to play?
-const ready = document.getElementById("ready");
+// Pre-submission info (containing main/form box, subheading, button)
+const preSubmission = document.getElementById("pre-submission");
 
 // Story box
 const storyBox = document.getElementById("story-box");
 
 // Photo
 const photo = document.getElementById("photo");
-
-// Button
-const button = document.getElementById("button");
 
 const changeValue = () => {
 // When user enters value, the output word should equal the input
@@ -91,10 +81,7 @@ const changeValue = () => {
     photo.style.display = "block";
 
 // Main box, "ready to play" header and button disappear
-    submit.style.display = "none";
-    mainBox.style.display = "none";
-    ready.style.display = "none";
-
+    preSubmission.style.display = "none";
 };
 
 // When user clicks button, the changeValue function will run
